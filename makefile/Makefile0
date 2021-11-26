@@ -1,0 +1,4 @@
+# target: prerequisite
+# 		command
+hello:
+	echo "hello world!"

@@ -1,0 +1,8 @@
+hello: hello.o
+	gcc hello.o -o hello
+hello.o: hello.c
+	gcc -c hello.c -o hello.o
+hello.c: 
+	echo "int main(int argc, char *argv[]) {return 0;}" > hello.c
+clean_hello:
+	rm -rf hello.o hello hello.c

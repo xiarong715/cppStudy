@@ -1,0 +1,8 @@
+some_file: other_file
+	echo "This will run second, because it depend on other_file"
+	touch some_file
+other_file:
+	echo "This will run first"
+	touch other_file
+clean:
+	rm -rf other_file some_file

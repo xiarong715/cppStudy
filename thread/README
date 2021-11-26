@@ -1,0 +1,5 @@
+g++ -o thread thread.cpp -std=c++11 -lpthread
+g++ -o thread_mutex thread_mutex.cpp -std=c++11 -lpthread
+g++ -o thread_unique_lock thread_unique_lock.cpp -std=c++11 -lpthread
+g++ -o thread_signal thread_signal.cpp -std=c++11 -lpthread
+g++ -o thread_lock_guard.cpp thread_lock_guard.cpp -std=c++1 -lpthread

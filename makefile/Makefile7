@@ -1,0 +1,14 @@
+thing_wrong := *.o # Don't do this
+thing_right := $(wildcard *.o)
+
+all : one four
+
+one : $(thing_wrong)
+	echo $@
+
+# two : *.o
+
+# three : $(thing_right)
+
+four : $(wildcard *.o)
+	echo $@

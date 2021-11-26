@@ -1,0 +1,1 @@
+g++ -o shared_ptr main.cpp -std=c++11 -lpthread
