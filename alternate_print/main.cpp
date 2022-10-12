@@ -3,6 +3,8 @@
 #include <unistd.h>
 #include <semaphore.h>
 
+// 一个线程不能正常退出，有待完善
+
 pthread_mutex_t mutex;
 sem_t sem;
 pthread_cond_t cond;
@@ -22,7 +24,7 @@ int main(int argc, char *argv[]) {
     pthread_create(&tid1, NULL, printing_num1, NULL);
     pthread_create(&tid2, NULL, printing_num2, NULL);
     // sem_post(&sem);     // +1
-    // one thread printing one number and 
+    // one thread printing one number and
 
     pthread_join(tid1, NULL);
     pthread_join(tid2, NULL);
